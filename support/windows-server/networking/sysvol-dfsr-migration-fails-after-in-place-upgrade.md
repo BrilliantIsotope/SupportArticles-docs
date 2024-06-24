@@ -89,10 +89,10 @@ There are several workarounds for this issue, depending on which migration globa
 
 ### Issue occurs in the Preparing or Redirecting phase
 
-1. If you have already run `DFRSMIG /SetGlobalState 1` or `DFRSMIG /SetGlobalState 2` previously, run the following command as a Domain Admin:
+1. If you have already run `DFSRMIG /SetGlobalState 1` or `DFSRMIG /SetGlobalState 2` previously, run the following command as a Domain Admin:
 
     ```console
-    DFRSMIG /SetGlobalState 0
+    DFSRMIG /SetGlobalState 0
     ```
 
 2. Wait for Active Directory replication to propagate throughout the domain, and for the state of Windows Server 2019 domain controllers to revert to the **Start** phase.
